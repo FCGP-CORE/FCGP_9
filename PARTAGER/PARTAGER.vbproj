@@ -1,0 +1,101 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <StartupObject>Sub Main</StartupObject>
+        <UseWindowsForms>true</UseWindowsForms>
+        <AssemblyName>FCGP_PARTAGER_VB</AssemblyName>
+        <RootNamespace>FCGP</RootNamespace>
+        <OptionStrict>On</OptionStrict>
+        <OptionInfer>On</OptionInfer>
+        <PackageId>FCGP_CAPTURER_VB_CORE</PackageId>
+        <Authors>FCGP_CAPTURER_CORE</Authors>
+        <Product>FCGP_CAPTURER_CORE</Product>
+        <SignAssembly>false</SignAssembly>
+        <DelaySign>false</DelaySign>
+        <NeutralLanguage />
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageProjectUrl>http://fcgp.e-monsite.com/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/FCGP-CORE/FCGP_9</RepositoryUrl>
+        <AssemblyVersion>9.2.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.cs</DefaultItemExcludes>
+        <LangVersion>latest</LangVersion>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <NoWarn />
+        <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+        <OutputPath>..\FCGP\VB\Debug\</OutputPath>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <RemoveIntegerChecks>false</RemoveIntegerChecks>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <DefineConstants>BETA = False, PARALLEL = True, CORE = True</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <NoWarn />
+        <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+        <OutputPath>..\FCGP\VB\Release\</OutputPath>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <RemoveIntegerChecks>true</RemoveIntegerChecks>
+        <Optimize>true</Optimize>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>none</DebugType>
+        <DefineConstants>BETA = False, PARALLEL = True, CORE = True</DefineConstants>
+    </PropertyGroup>
+	
+    <ItemGroup>
+        <Import Include="FCGP" />
+        <Import Include="FCGP.Coordonnees" />
+        <Import Include="FCGP.Proprietes" />
+        <Import Include="FCGP.TRKs" />
+        <Import Include="System.ComponentModel" />
+        <Import Include="System.Data" />
+        <Import Include="System.Data.SQLite" />
+        <Import Include="System.Drawing" />
+        <Import Include="System.Drawing.Drawing2D" />
+        <Import Include="System.Drawing.Imaging" />
+        <Import Include="System.Globalization" />
+        <Import Include="System.IO" />
+        <Import Include="System.IO.Compression" />
+        <Import Include="System.Net" />
+        <Import Include="System.Net.Http" />
+        <Import Include="System.Runtime.CompilerServices" />
+        <Import Include="System.Runtime.InteropServices" />
+        <Import Include="System.Text" />
+        <Import Include="System.Threading" />
+        <Import Include="System.Windows.Forms" />
+        <Import Include="System.Xml" />
+    </ItemGroup>
+  
+    <ItemGroup>
+        <Compile Update="Proprietes\Resources.Designer.vb">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+	    <EmbeddedResource Update="Proprietes\Resources.resx">
+		    <CustomToolNamespace>Proprietes</CustomToolNamespace>
+		    <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+		    <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+	    </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+	    <Content Include="..\RESOURCES\Xml\ListeMethodes.xml" Link="ListeMethodes.xml">
+		    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    </Content>
+    </ItemGroup>
+
+</Project>

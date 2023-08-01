@@ -1,0 +1,106 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+	    <OutputType>Library</OutputType>
+	    <TargetFramework>net6.0-windows</TargetFramework>
+		<StartupObject></StartupObject>
+	    <UseWindowsForms>true</UseWindowsForms>
+	    <AssemblyName>FCGP_PARTAGER_CS</AssemblyName>
+	    <RootNamespace>FCGP</RootNamespace>
+	    <OptionStrict>On</OptionStrict>
+	    <OptionInfer>On</OptionInfer>
+	    <PackageId>FCGP_PARTAGER_CS_CORE</PackageId>
+	    <Authors>FCGP_PARTAGER_CORE</Authors>
+	    <Product>FCGP_PARTAGER_CORE</Product>
+	    <SignAssembly>false</SignAssembly>
+	    <DelaySign>false</DelaySign>
+	    <NeutralLanguage />
+	    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	    <AssemblyVersion>9.2.0.0</AssemblyVersion>
+	    <FileVersion>1.0.0.0</FileVersion>
+	    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
+	    <LangVersion>latest</LangVersion>
+	    <Platforms>AnyCPU</Platforms>
+	    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+	    <IsPublishable>False</IsPublishable>
+	    <PackageProjectUrl>http://fcgp.e-monsite.com/</PackageProjectUrl>
+	    <RepositoryUrl>https://github.com/FCGP-CORE/FCGP_9</RepositoryUrl>
+    </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn />
+		<WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+		<OutputPath>..\FCGP\CS\Debug\</OutputPath>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<RemoveIntegerChecks>false</RemoveIntegerChecks>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<DefineConstants> PARALLEL ; CORE </DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn />
+		<WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+		<OutputPath>..\FCGP\CS\Release\</OutputPath>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<RemoveIntegerChecks>true</RemoveIntegerChecks>
+		<Optimize>true</Optimize>
+		<DebugSymbols>false</DebugSymbols>
+		<DebugType>none</DebugType>
+		<DefineConstants> PARALLEL; CORE</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="FCGP.Coordonnees" />
+		<Using Include="FCGP.Proprietes" />
+		<Using Include="FCGP.TRKs" />
+		<Using Include="System" />
+		<Using Include="System.Collections.Generic" />
+		<Using Include="System.ComponentModel" />
+		<Using Include="System.Data" />
+		<Using Include="System.Data.SQLite" />
+		<Using Include="System.Diagnostics" />
+		<Using Include="System.Drawing" />
+		<Using Include="System.Drawing.Drawing2D" />
+		<Using Include="System.Drawing.Imaging" />
+		<Using Include="System.Globalization" />
+		<Using Include="System.IO" />
+		<Using Include="System.IO.Compression" />
+		<Using Include="System.Linq" />
+		<Using Include="System.Net" />
+		<Using Include="System.Net.Http" />
+		<Using Include="System.Runtime.InteropServices" />
+		<Using Include="System.Text" />
+		<Using Include="System.Threading" />
+		<Using Include="System.Threading.Tasks" />
+		<Using Include="System.Windows.Forms" />
+		<Using Include="System.Xml" />
+		<Using Include="System.Xml.Linq" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Proprietes\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Proprietes\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\RESOURCES\Xml\ListeMethodes.xml" Link="ListeMethodes.xml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>

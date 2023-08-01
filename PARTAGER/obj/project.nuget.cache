@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+d0u4tVkbPmli23V+rHC76S8ze9I5EEVTmkPHMp+06ff2Gq2gN47oCFzvtl9pSysggb0co5zgufm/KUY1JxSrA==",
+  "success": true,
+  "projectFilePath": "E:\\Temp\\FCGP_9-master\\PARTAGER\\PARTAGER.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gille\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\gille\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512"
+  ],
+  "logs": []
+}
