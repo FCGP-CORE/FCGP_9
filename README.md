@@ -1,79 +1,81 @@
 # FCGP_Core_9.200
 
 ## Principe
-Fcgp est un ensemble de 3 programmes destinés aux applications de cartographie, aux GPS Garmin et à l'application ORUX Map sur smartphone Android, 
-en produisant des cartes raster géoréférencées et des fichiers tuiles afin d'être autonome (off ligne). Voir le [site FCGP](http://fcgp.e-monsite.com/ "aller sur le site") pour plus de détail
+Fcgp est un ensemble de 3 programmes destinÃ©s aux applications de cartographie, aux GPS Garmin et Ã  l'application ORUX Map sur smartphone Android, 
+en produisant des cartes raster gÃ©orÃ©fÃ©rencÃ©es et des fichiers tuiles afin d'Ãªtre autonome (off ligne). Voir le [site FCGP](http://fcgp.e-monsite.com/ "aller sur le site") pour plus de dÃ©tail
 - ***Format des cartes*** 
-  - Georef : format texte propriétaire. Contient toutes les informations de géoréférencement
+  - Georef : format texte propriÃ©taire. Contient toutes les informations de gÃ©orÃ©fÃ©rencement
   de la carte.
   - Imp : format pour le logiciel CompeLand (Gps TwoNav).
   - Map : format pour le logiciel OziExploreur.
   - Tab : format pour le logiciel MapInfo.
   - Bpw, Pgw, Jgw : format pour le logiciel QGIS.
 - ***Format des fichiers tuiles***
-  - KMZ : fichier kml compressé pour Google Earth, BaseCamp et les GPS Garmin supportant les CustomMap.
-  - JNX : fichier propriétaire Garmin pour BaseCamp et les GPS Garmin supportant les BirdsEye.
-  - ORUX : Répertoire contenant 2 fichiers pour l'application Orux Map sur smartphone Android.
+  - KMZ : fichier kml compressÃ© pour Google Earth, BaseCamp et les GPS Garmin supportant les CustomMap.
+  - JNX : fichier propriÃ©taire Garmin pour BaseCamp et les GPS Garmin supportant les BirdsEye.
+  - ORUX : RÃ©pertoire contenant 2 fichiers pour l'application Orux Map sur smartphone Android.
 
-## Particularité du code VB
-- ***Implémentation des programmes*** : Le programme démarre à partir d'une procédure Main qui lance le formulaire principal. Voir dans les propriétés du projet  la partie Application. Cela permet d'établir une similitude avec un programme C# et ainsi de pouvoir comparer les 2 langages.
-- ***Implémentation des formulaires WindowsForms*** : Les formulaires WindowsForms n'utilise pas le modificateur de variable `WithEvents` ni la clause `Handles` spécifique à VB mais ajoute explicitement le constructeur `New`.  Les évènements du formulaire et de ces contrôles sont ajoutés dans la `Sub InitialiserEvenements`.
-Cela n'empêche pas l'utilisation du concepteur de formulaire qui intervient sur la `Sub InitializeComponent()` et facilite aussi la traduction VB --> C# des formulaires en enlevant beaucoup de code inutile. L'utilisation du concepteur de formulaire détruira tout ou partie de la mise en forme actuelle du code du designer. 
+## ParticularitÃ© du code VB
+- ***ImplÃ©mentation des programmes*** : Le programme dÃ©marre Ã  partir d'une procÃ©dure Main qui lance le formulaire principal. Voir dans les propriÃ©tÃ©s du projet  la partie Application. Cela permet d'Ã©tablir une similitude avec un programme C# et ainsi de pouvoir comparer les 2 langages.
+- ***ImplÃ©mentation des formulaires WindowsForms*** : Les formulaires WindowsForms n'utilise pas le modificateur de variable `WithEvents` ni la clause `Handles` spÃ©cifique Ã  VB mais ajoute explicitement le constructeur `New`.  Les Ã©vÃ¨nements du formulaire et de ces contrÃ´les sont ajoutÃ©s dans la `Sub InitialiserEvenements`.
+Cela n'empÃªche pas l'utilisation du concepteur de formulaire qui intervient sur la `Sub InitializeComponent()` et facilite aussi la traduction VB --> C# des formulaires en enlevant beaucoup de code inutile. L'utilisation du concepteur de formulaire dÃ©truira tout ou partie de la mise en forme actuelle du code du designer. 
 ```VB
-	'Dans le designer
-	'Suppression par rapport au désigner VB de la déclaration d'une variable avec le modificateur WithEvents
+	'Dans le designer du formulaire
+	'Suppression par rapport au dÃ©signer VB de la dÃ©claration d'une variable avec le modificateur WithEvents
 	'Friend WithEvents Button1 As Button
-	'Ajout par rapport au designer VB de la déclaration normale d'une variable au lieu du modificateur WithEvents
+	'Ajout par rapport au designer VB de la dÃ©claration normale d'une variable au lieu du modificateur WithEvents
 	Friend Button1 As Button
 
 	'Ajout du constructeur du formulaire
 	Friend Sub New()
-	   InitialiserEvenements()
 	   InitializeComponent()
+	   InitialiserEvenements()
 	End Sub
 
-	'Ajout d'une procédure qui centralise l'ajout des évènements liés au formulaire
+	'Ajout d'une procÃ©dure qui centralise l'ajout des Ã©vÃ¨nements liÃ©s au formulaire
 	Private Sub InitialiserEvenements()
 	   AddHandler Me.Button1.Click, New EventHandler(AddressOf Button1_Click)
 	End Sub
 
+	'Dans le code du formulaire
 	'Suppression de la clause Handles. Si on ne supprime pas la clause il y aura 2 passages sur la Sub
 	Private Sub Button1_Click(sender As Object, e As EventArgs) 'Handles Button1.Click
+	  'action Ã  rÃ©aliser
 	End Sub
 ```
-- ***Autres particularités***
-  - D'une manière générale il n'est pas fait appel aux procédures, fonctions et constantes spécifiques de VB disponibles avec l'assembly `Microsoft.VisualBasic`. On retrouve presque tout dans le framework. Seules les fonctions de conversion telque Cint, Ctype, et DirectCast sont utilisées. 
-  - Les classes ou modules principaux contiennent toutes des structures ou des classes privées qui les concernent y compris des formulaires. Ces formulaires peuvent être modifiés avec le concepteur si besoin. 
+- ***Autres particularitÃ©s***
+  - D'une maniÃ¨re gÃ©nÃ©rale il n'est pas fait appel aux procÃ©dures, fonctions et constantes spÃ©cifiques de VB disponibles avec l'assembly `Microsoft.VisualBasic`. On retrouve presque tout dans le framework. Seules les fonctions de conversion telque Cint, Ctype, et DirectCast sont utilisÃ©es. 
+  - Les classes ou modules principaux contiennent toutes des structures ou des classes privÃ©es qui les concernent y compris des formulaires. Ces formulaires peuvent Ãªtre modifiÃ©s avec le concepteur si besoin. 
 
 ## Conversion du code VB en C#
-- ***Utilitaires de conversion*** : Le plus gros de la traduction a été faite avec l'extension Visual Studio de Code Converter. Quelques passages ont été comparés avec la traduction de Instant C# de Tangible Software (version gratuite) ou avec dnSpy principalement pour voir si il y avait une meilleure traduction. La finalisation du code C# a été faite par la comparaison des 2 codes pour enlever les noms de domaine superflus inclus au niveau du projet ou les noms de classe reportés dans les directives `using static` et par des tests servant à comparer la similitude des fichiers de sortie. 
-  - Les fichiers Sqlite (.db) diffèrent car le texte de création des tables est sauvegardé dans les métadonnées de la base et que le texte de création diffère entre les 2 codes. Cela est dû à l'emploi d'une `String multilignes`. Il y a 5 espaces par ligne en défaveur de C#, 4 pour une indentation et un pour le caractère de chaine textuelle `@`.
-  - Les fichiers JNX diffèrent car le Guid est aléatoire.
-  - Les fichiers KMZ diffèrent car les tags des entrées d'un fichier ZIP sont aléatoires.
-- ***Particularités de conversion et différences*** : 
-  - Nombres Entiers : Les fonctions de conversion de VB vers des nombres entiers, `Byte, Short, Integer, Long, UShort, UInteger, ULong`, ne tronquent pas la valeur d'origine mais appliquent un arrondi dit 'Financier'. Si l'on veut obtenir exactement les mêmes résultats entre VB et C#, il faut utiliser par exemple pour `Cint(Valeur)` `(int)Math.Round(Valeur)` sauf pour les valeurs qui sont connues et considérées comme des entiers tel que les valeurs retournées par les fonctions `Math.Floor`, `Math.Ceiling` et `Math.Truncate` ou la valeur décimale de certains contrôles de formulaires en fonction de leur configuration.
-  - Propriétés : 
-    - VB déclare automatiquement une variable privée `_NomPropriété` associée à chaque Propriété implémentée automatiquement ou readOnly. Cela permet d'utiliser la variable plutôt que la propriété à l'intérieur du bloc de la déclaration de la propriété et d'éviter ainsi des appels inutiles aux fonctions sous-jacentes `get` et `set`. C# ne propose pas ce genre de facilité mais on peut le faire manuellement si besoin.
-	- Les propriétés avec paramètres ne sont pas acceptées en C#, elles sont traduites en fonction `get_NomPropriété` et `set_NomPropriété`. On peut renommer éventuellement une des deux en `NomPropriété`.
-  - Opérateur \ : VB a un opérateur spécifique pour la division entière. Les opérandes sont d'abord arrondies avant de procéder à la division. C# choisit le type du retour de la division en fonction du type des opérandes.
-  - Variable static : VB permet de déclarer des variables `static` éventuellement initialisées à l'intérieur d'une Sub ou Function. C# ne le permet pas. Cela oblige à déclarer un champ privé au niveau de la classe. 
-  - Fonction : VB déclare automatiquement une variable ayant le même nom que celui de la fonction. Cela permet d'affecter une valeur de retour sans obligation d'utiliser le `Return`. Lors de la traduction en C# une variable sera créée et le `return` sera utilisé pour retourner la valeur.
-  - Exit Try : VB n'est pas avare de mots clés pour sortir d'une boucle ou d'une structure. `Exit try` n'existe pas en C# mais peut être remplacé par `return`. Dans le cas d'une fonction `return` sera suivi d'une valeur correspondante au type de retour de la fonction. D'autres traductions sont possibles notamment avec un `label` et le mot clé `goto`. Attention si il y a du code après le bloc `Try Catch Finally`
+- ***Utilitaires de conversion*** : Le plus gros de la traduction a Ã©tÃ© faite avec l'extension Visual Studio de Code Converter. Quelques passages ont Ã©tÃ© comparÃ©s avec la traduction de Instant C# de Tangible Software (version gratuite) ou avec dnSpy principalement pour voir si il y avait une meilleure traduction. La finalisation du code C# a Ã©tÃ© faite par la comparaison des 2 codes pour enlever les noms de domaine superflus inclus au niveau du projet ou les noms de classe reportÃ©s dans les directives `using static` et par des tests servant Ã  comparer la similitude des fichiers de sortie. 
+  - Les fichiers Sqlite (.db) diffÃ¨rent car le texte de crÃ©ation des tables est sauvegardÃ© dans les mÃ©tadonnÃ©es de la base et que le texte de crÃ©ation diffÃ¨re entre les 2 codes. Cela est dÃ» Ã  l'emploi d'une `String multilignes`. Il y a 5 espaces par ligne en dÃ©faveur de C#, 4 pour une indentation et un pour le caractÃ¨re de chaine textuelle `@`.
+  - Les fichiers JNX diffÃ¨rent car le Guid est alÃ©atoire.
+  - Les fichiers KMZ diffÃ¨rent car les tags des entrÃ©es d'un fichier ZIP sont alÃ©atoires.
+- ***ParticularitÃ©s de conversion et diffÃ©rences*** : 
+  - Nombres Entiers : Les fonctions de conversion de VB vers des nombres entiers, `Byte, Short, Integer, Long, UShort, UInteger, ULong`, ne tronquent pas la valeur d'origine mais appliquent un arrondi dit 'Financier'. Si l'on veut obtenir exactement les mÃªmes rÃ©sultats entre VB et C#, il faut utiliser par exemple pour `Cint(Valeur)` `(int)Math.Round(Valeur)` sauf pour les valeurs qui sont connues et considÃ©rÃ©es comme des entiers tel que les valeurs retournÃ©es par les fonctions `Math.Floor`, `Math.Ceiling` et `Math.Truncate` ou la valeur dÃ©cimale de certains contrÃ´les de formulaires en fonction de leur configuration.
+  - PropriÃ©tÃ©s : 
+    - VB dÃ©clare automatiquement une variable privÃ©e `_NomPropriÃ©tÃ©` associÃ©e Ã  chaque PropriÃ©tÃ© implÃ©mentÃ©e automatiquement ou readOnly. Cela permet d'utiliser la variable plutÃ´t que la propriÃ©tÃ© Ã  l'intÃ©rieur du bloc de la dÃ©claration de la propriÃ©tÃ© et d'Ã©viter ainsi des appels inutiles aux fonctions sous-jacentes `get` et `set`. C# ne propose pas ce genre de facilitÃ© mais on peut le faire manuellement si besoin.
+	- Les propriÃ©tÃ©s avec paramÃ¨tres ne sont pas acceptÃ©es en C#, elles sont traduites en fonction `get_NomPropriÃ©tÃ©` et `set_NomPropriÃ©tÃ©`. On peut renommer Ã©ventuellement une des deux en `NomPropriÃ©tÃ©`.
+  - OpÃ©rateur \ : VB a un opÃ©rateur spÃ©cifique pour la division entiÃ¨re. Les opÃ©randes sont d'abord arrondies avant de procÃ©der Ã  la division. C# choisit le type du retour de la division en fonction du type des opÃ©randes.
+  - Variable static : VB permet de dÃ©clarer des variables `static` Ã©ventuellement initialisÃ©es Ã  l'intÃ©rieur d'une Sub ou Function. C# ne le permet pas. Cela oblige Ã  dÃ©clarer un champ privÃ© au niveau de la classe. 
+  - Fonction : VB dÃ©clare automatiquement une variable ayant le mÃªme nom que celui de la fonction. Cela permet d'affecter une valeur de retour sans obligation d'utiliser le `Return`. Lors de la traduction en C# une variable sera crÃ©Ã©e et le `return` sera utilisÃ© pour retourner la valeur.
+  - Exit Try : VB n'est pas avare de mots clÃ©s pour sortir d'une boucle ou d'une structure. `Exit try` n'existe pas en C# mais peut Ãªtre remplacÃ© par `return`. Dans le cas d'une fonction `return` sera suivi d'une valeur correspondante au type de retour de la fonction. D'autres traductions sont possibles notamment avec un `label` et le mot clÃ© `goto`. Attention si il y a du code aprÃ¨s le bloc `Try Catch Finally`
   - Autres : 
-    - Les variables doivent être déclarées avant de servir de paramètre pour une procédure en VB. C# permet de faire la déclaration au niveau de l'appel de la procédure dans le cas d'une valeur `out`
-	- VB oblige l'affectation d'une variable lors de la déclaration d'un objet `Dim Info = New TuileAffichage(Col, Row, Me)`, C# permet d'ignorer l'affectation de la création de l'object `_ = new TuileAffichage(Col, Row, this);`
-    - L'échange des valeurs de 2 variables nécessite une variable intermédiaire en VB `Dim Tempo As Integer = Futur : Futur = Encours : Encours = Tempo`. En C# l'utilisation des tuples permet de le faire plus naturellement `(Encours, Futur) = (Futur, Encours);`
-    - VB n'a pas d'opérateur de plage alors que celui-ci est systématiquement employé dans le code C# lorsque cela est possible.
-	- La forme simplifiée du `using` C# n'est pas utilisée car elle n'existe pas en VB. Son emploi ne facile pas la comparaison des 2 codes étant donné qu'on ne sait pas où fini le bloc `using`.
+    - Les variables doivent Ãªtre dÃ©clarÃ©es avant de servir de paramÃ¨tre pour une procÃ©dure en VB. C# permet de faire la dÃ©claration au niveau de l'appel de la procÃ©dure dans le cas d'une valeur `out`
+	- VB oblige l'affectation d'une variable lors de la dÃ©claration d'un objet `Dim Info = New TuileAffichage(Col, Row, Me)`, C# permet d'ignorer l'affectation de la crÃ©ation de l'object `_ = new TuileAffichage(Col, Row, this);`
+    - L'Ã©change des valeurs de 2 variables nÃ©cessite une variable intermÃ©diaire en VB `Dim Tempo As Integer = Futur : Futur = Encours : Encours = Tempo`. En C# l'utilisation des tuples permet de le faire plus naturellement `(Encours, Futur) = (Futur, Encours);`
+    - VB n'a pas d'opÃ©rateur de plage alors que celui-ci est systÃ©matiquement employÃ© dans le code C# lorsque cela est possible.
+	- La forme simplifiÃ©e du `using` C# n'est pas utilisÃ©e car elle n'existe pas en VB. Son emploi ne facile pas la comparaison des 2 codes Ã©tant donnÃ© qu'on ne sait pas oÃ¹ fini le bloc `using`.
   - Remarques : 
-    - Les 2 codes sont très similaires à la lectutre. Cela est du au fait que le code VB par du postulat qu'il faut utiliser le moins possible les particularités spécifiques de VB. 
-	- Le framework .Net intègre des nouveaux types qui sont inacessibles à VB, cela sous entend qu'un code spécifique à C# pourrait améliorer la réactivité des programmes FCGP. 
+    - Les 2 codes sont trÃ¨s similaires Ã  la lectutre. Cela est du au fait que le code VB par du postulat qu'il faut utiliser le moins possible les particularitÃ©s spÃ©cifiques de VB. 
+	- Le framework .Net intÃ¨gre des nouveaux types qui sont inacessibles Ã  VB, cela sous entend qu'un code spÃ©cifique Ã  C# pourrait amÃ©liorer la rÃ©activitÃ© des programmes FCGP. 
 
 ## Type de projet 
-- Il faut une version de Visual Studio qui supporte le `.Net 6` et la dernière version du langage VB et C#. Les solutions sont des versions de Visual Studio 2017 mais vous pouvez utiliser Visual Studio 2022 Community. Attention les versions 2022 17.1 à 2022 17.4 ne peuvent plus afficher les propriétés de certains projets VB. La version 2022 17.5 n'a plus ce problème.
-- Le projet PARTAGER est commun aux 3 programmes FCGP. Vous pouvez soit l'intégrer comme référence dans les autres projets ou laisser les liens sur les différents fichiers qui le composent. Cela facilite les modifications du code. 
-- Il est fait appel à la DLL de Sqlite sous forme de package Nugets pour la base de données des Settings ou les fichiers Orux. Voir le [site SQLite.org](https://www.sqlite.org/index.html)
-- Il est fait appel à la DLL de ScottPlot sous forme de package Nugets et au code pour le contôle formulaire qui permet l'affichage des graphiques liés aux traces. Voir le [site ScottPlot.Net ](https://scottplot.net/)
-- Le module FormatJNX est basé sur la description du format JNX et le code FreePascal de Whiter Brinkster. Voir le [blog JNX Raster Maps](http://whiter.brinkster.net/en/JNX.shtml). Télécharger le code de la [Library Pascal](http://whiter.brinkster.net/JNXLib.rar)
-- Les encodeurs d'image Jpeg et Png du .Net sont limités à des dimensions de 65500 pixels environ. On peut trouver des codes pour encodeur et les modifier pour qu'ils acceptent des dimensions plus importantes. Il n'est pas certain que les programmes de lecture d'images Open Source soient capables de lire les grandes images de ce type et pour les programmes du commerce je ne sais pas. Cependant cela permettrai d'extraire directement les tuiles Jpeg sans passer par le découpage de l'image au format Raw.
+- Il faut une version de Visual Studio qui supporte le `.Net 6` et la derniÃ¨re version du langage VB et C#. Les solutions sont des versions de Visual Studio 2017 mais vous pouvez utiliser Visual Studio 2022 Community. Attention les versions 2022 17.1 Ã  2022 17.4 ne peuvent plus afficher les propriÃ©tÃ©s de certains projets VB. La version 2022 17.5 n'a plus ce problÃ¨me.
+- Le projet PARTAGER est commun aux 3 programmes FCGP. Vous pouvez soit l'intÃ©grer comme rÃ©fÃ©rence dans les autres projets ou laisser les liens sur les diffÃ©rents fichiers qui le composent. Cela facilite les modifications du code. 
+- Il est fait appel Ã  la DLL de Sqlite sous forme de package Nugets pour la base de donnÃ©es des Settings ou les fichiers Orux. Voir le [site SQLite.org](https://www.sqlite.org/index.html)
+- Il est fait appel Ã  la DLL de ScottPlot sous forme de package Nugets et au code pour le contÃ´le formulaire qui permet l'affichage des graphiques liÃ©s aux traces. Voir le [site ScottPlot.Net ](https://scottplot.net/)
+- Le module FormatJNX est basÃ© sur la description du format JNX et le code FreePascal de Whiter Brinkster. Voir le [blog JNX Raster Maps](http://whiter.brinkster.net/en/JNX.shtml). TÃ©lÃ©charger le code de la [Library Pascal](http://whiter.brinkster.net/JNXLib.rar)
+- Les encodeurs d'image Jpeg et Png du .Net sont limitÃ©s Ã  des dimensions de 65500 pixels environ. On peut trouver des codes pour encodeur et les modifier pour qu'ils acceptent des dimensions plus importantes. Il n'est pas certain que les programmes de lecture d'images Open Source soient capables de lire les grandes images de ce type et pour les programmes du commerce je ne sais pas. Cependant cela permettrai d'extraire directement les tuiles Jpeg sans passer par le dÃ©coupage de l'image au format Raw.
 - Code sous license GNU GENERAL PUBLIC LICENSE Version 3.
