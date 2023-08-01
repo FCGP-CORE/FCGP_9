@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PH5t4HKFvtqUTu4FWWddrBJnc3iBtvc8F0G1SMY9zIfzUV192F/AT15e4t07Z7/aQXlrYF0/tuT15gv6fuCbLw==",
+  "success": true,
+  "projectFilePath": "E:\\Temp\\FCGP_9-master\\REGROUPER\\REGROUPER.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gille\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\gille\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512"
+  ],
+  "logs": []
+}
