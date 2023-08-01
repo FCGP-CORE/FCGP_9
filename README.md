@@ -17,8 +17,8 @@ en produisant des cartes raster géoréférencées et des fichiers tuiles afin d
 
 ## Particularité du code VB
 - ***Implémentation des programmes*** : Le programme démarre à partir d'une procédure Main qui lance le formulaire principal. Voir dans les propriétés du projet  la partie Application. Cela permet d'établir une similitude avec un programme C# et ainsi de pouvoir comparer les 2 langages.
-- ***Implémentation des formulaires WindowsForms*** : Les formulaires WindowsForms n'utilise pas le modificateur de variable `WithEvents` ni la clause `Handles` spécifique à VB mais ajoute explicitement le constructeur `New`.  Les évènements du formulaire et de ces contrôles sont ajoutés dans la `Sub InitialiserEvenements`.
-Cela n'empêche pas l'utilisation du concepteur de formulaire qui intervient sur la `Sub InitializeComponent()` et facilite aussi la traduction VB --> C# des formulaires en enlevant beaucoup de code inutile. L'utilisation du concepteur de formulaire détruira tout ou partie de la mise en forme actuelle du code du designer. 
+- ***Implémentation des formulaires WindowsForms*** : Les formulaires WindowsForms n'utilisent pas le modificateur de variable `WithEvents` ni la clause `Handles` spécifique à VB mais ajoutent explicitement le constructeur `New`. Les évènements du formulaire et de ces contrôles sont ajoutés dans la `Sub InitialiserEvenements`.
+Cette implémentation de formulaire n'empêche pas l'utilisation du concepteur de formulaire qui intervient sur la `Sub InitializeComponent()` et facilite la traduction VB --> C# du formulaire en enlevant beaucoup de code inutile. L'utilisation du concepteur de formulaire détruira tout ou partie de la mise en forme actuelle du code du designer. 
 ```VB
 	'Dans le designer du formulaire
 	'Suppression par rapport au désigner VB de la déclaration d'une variable avec le modificateur WithEvents
