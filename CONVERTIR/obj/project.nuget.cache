@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rB/ba5TYBSdpBWek+MSazNcTHLyuM9lQYwEruDr+onvDqAXUrmhhno/GaCIKqOwPxaFUjgjJuPvAfNEBxoH/5g==",
+  "success": true,
+  "projectFilePath": "E:\\Temp\\FCGP_9-master\\CONVERTIR\\CONVERTIR.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gille\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\gille\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512"
+  ],
+  "logs": []
+}

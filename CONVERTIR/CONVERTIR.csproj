@@ -1,0 +1,154 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<StartupObject>FCGP.FCGP_Convertir</StartupObject>
+		<UseWindowsForms>true</UseWindowsForms>
+		<AssemblyName>FCGP_CONVERTIR_CS</AssemblyName>
+		<RootNamespace>FCGP</RootNamespace>
+		<ApplicationIcon>FCGP_Convertir.ico</ApplicationIcon>
+		<PackageId>FCGP_CONVERTIR_CS_CORE</PackageId>
+		<Authors>FCGP_CONVERTIR_CORE</Authors>
+		<Product>FCGP_CONVERTIR_CORE</Product>
+		<SignAssembly>false</SignAssembly>
+		<DelaySign>false</DelaySign>
+		<NeutralLanguage />
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<AssemblyVersion>9.2.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
+		<LangVersion>latest</LangVersion>
+		<Platforms>AnyCPU</Platforms>
+		<IsPublishable>False</IsPublishable>
+		<PackageProjectUrl>http://fcgp.e-monsite.com/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/FCGP-CORE/FCGP_9</RepositoryUrl>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn />
+		<WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+		<OutputPath>..\FCGP\CS\Debug\</OutputPath>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<RemoveIntegerChecks>false</RemoveIntegerChecks>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<DefineConstants>PARALLEL; CORE</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn />
+		<WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+		<OutputPath>..\FCGP\CS\Release\</OutputPath>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<RemoveIntegerChecks>true</RemoveIntegerChecks>
+		<Optimize>true</Optimize>
+		<DebugSymbols>false</DebugSymbols>
+		<DebugType>none</DebugType>
+		<DefineDebug>false</DefineDebug>
+		<DefineTrace>false</DefineTrace>
+		<DefineConstants>PARALLEL; CORE</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\PARTAGER\Cartes\Carte.cs" Link="ModulesPartages\Cartes\Carte.cs" />
+		<Compile Include="..\PARTAGER\Cartes\Cartes_Grille.cs" Link="ModulesPartages\Cartes\Cartes_Grille.cs" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_FichiersReferencement.cs" Link="ModulesPartages\Cartes\Carte_FichiersReferencement.cs" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_Interne_Niveau_1.cs" Link="ModulesPartages\Cartes\Carte_Interne_Niveau_1.cs" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_Interne_Niveau_2.cs" Link="ModulesPartages\Cartes\Carte_Interne_Niveau_2.cs" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_Interpol_Avec_Grille.cs" Link="ModulesPartages\Cartes\Carte_Interpol_Avec_Grille.cs" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_Interpol_Sans_Grille.cs" Link="ModulesPartages\Cartes\Carte_Interpol_Sans_Grille.cs" />
+		<Compile Include="..\PARTAGER\Cartes\DescriptionImageFichier.cs" Link="ModulesPartages\Cartes\DescriptionImageFichier.cs" />
+		<Compile Include="..\PARTAGER\Cartes\FormatJNX.cs" Link="ModulesPartages\Cartes\FormatJNX.cs" />
+		<Compile Include="..\PARTAGER\Cartes\FormatORUX.cs" Link="ModulesPartages\Cartes\FormatORUX.cs" />
+		<Compile Include="..\PARTAGER\Cartes\GeoRef.cs" Link="ModulesPartages\Cartes\GeoRef.cs" />
+		<Compile Include="..\PARTAGER\Commun\Chronometre.cs" Link="ModulesPartages\Commun\Chronometre.cs" />
+		<Compile Include="..\PARTAGER\Commun\Commun.cs" Link="ModulesPartages\Commun\Commun.cs" />
+		<Compile Include="..\PARTAGER\Commun\CurseursSouris.cs" Link="ModulesPartages\Commun\CurseursSouris.cs" />
+		<Compile Include="..\PARTAGER\Commun\Minuterie.cs" Link="ModulesPartages\Commun\Minuterie.cs" />
+		<Compile Include="..\PARTAGER\Commun\NativeMethods.cs" Link="ModulesPartages\Commun\NativeMethods.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ConvertirCoordonnees.cs" Link="ModulesPartages\ConvertirCoordonnees\ConvertirCoordonnees.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ParametresDatums.cs" Link="ModulesPartages\ConvertirCoordonnees\ParametresDatums.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionCartesiennes.cs" Link="ModulesPartages\ConvertirCoordonnees\ProjectionCartesiennes.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionLambert_1.cs" Link="ModulesPartages\ConvertirCoordonnees\ProjectionLambert_1.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionLambert_2.cs" Link="ModulesPartages\ConvertirCoordonnees\ProjectionLambert_2.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionLongitudeLatitude.cs" Link="ModulesPartages\ConvertirCoordonnees\ProjectionLongitudeLatitude.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionMercator.cs" Link="ModulesPartages\ConvertirCoordonnees\ProjectionMercator.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionMercatorUtm.cs" Link="ModulesPartages\ConvertirCoordonnees\ProjectionMercatorUtm.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionWebMercator.cs" Link="ModulesPartages\ConvertirCoordonnees\ProjectionWebMercator.cs" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionSuisse.cs" Link="ModulesPartages\ConvertirCoordonnees\ProjectionSuisse.cs" />
+		<Compile Include="..\PARTAGER\DonneesCartographiques\DonneesSiteWeb.cs" Link="ModulesPartages\DonneesCartographiques\DonneesSiteWeb.cs" />
+		<Compile Include="..\PARTAGER\DonneesCartographiques\NiveauDetailCartographique.cs" Link="ModulesPartages\DonneesCartographiques\NiveauDetailCartographique.cs" />
+		<Compile Include="..\PARTAGER\DonneesCartographiques\ProjectionCartographique.cs" Link="ModulesPartages\DonneesCartographiques\ProjectionCartographique.cs" />
+		<Compile Include="..\PARTAGER\DonneesCartographiques\SystemeCartographique.cs" Link="ModulesPartages\DonneesCartographiques\SystemeCartographique.cs" />
+		<Compile Include="..\PARTAGER\Enumerations\Enumerations.cs" Link="ModulesPartages\Enumerations\Enumerations.cs" />
+		<Compile Include="..\PARTAGER\Informations\AfficheInformation.cs" Link="ModulesPartages\Informations\AfficheInformation.cs" />
+		<Compile Include="..\PARTAGER\Settings\Settings.cs" Link="ModulesPartages\Settings\Settings.cs" />
+		<Compile Include="..\PARTAGER\Structures\PointD.cs" Link="ModulesPartages\Structures\PointD.cs" />
+		<Compile Include="..\PARTAGER\Structures\PointG.cs" Link="ModulesPartages\Structures\PointG.cs" />
+		<Compile Include="..\PARTAGER\Structures\PointProjection.cs" Link="ModulesPartages\Structures\PointProjection.cs" />
+		<Compile Include="..\PARTAGER\Structures\RectangleD.cs" Link="ModulesPartages\Structures\RectangleD.cs" />
+		<Compile Include="..\PARTAGER\Structures\SizeD.cs" Link="ModulesPartages\Structures\SizeD.cs" />
+		<Compile Include="..\PARTAGER\TamponMemoire\DonneesImage.cs" Link="ModulesPartages\TamponMemoire\DonneesImage.cs" />
+		<Compile Include="..\PARTAGER\TamponMemoire\ImageBlocked.cs" Link="ModulesPartages\TamponMemoire\ImageBlocked.cs" />
+		<Compile Include="..\PARTAGER\TamponMemoire\TableauBlocked.cs" Link="ModulesPartages\TamponMemoire\TableauBlocked.cs" />
+		<Compile Include="..\PARTAGER\Traces\Trace.cs" Link="ModulesPartages\Traces\Trace.cs" />
+		<Compile Include="..\PARTAGER\Traces\TraceFormFermer.cs" Link="ModulesPartages\Traces\TraceFormFermer.cs" />
+		<Compile Include="..\PARTAGER\Traces\TraceFormOuvrir.cs" Link="ModulesPartages\Traces\TraceFormOuvrir.cs" />
+		<Compile Include="..\PARTAGER\Traces\TraceFormProprietes.cs" Link="ModulesPartages\Traces\TraceFormProprietes.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="FCGP.Coordonnees" />
+		<Using Include="FCGP.Proprietes" />
+		<Using Include="FCGP.TRKs" />
+		<Using Include="System" />
+		<Using Include="System.Collections.Generic" />
+		<Using Include="System.ComponentModel" />
+		<Using Include="System.Data" />
+		<Using Include="System.Data.SQLite" />
+		<Using Include="System.Diagnostics" />
+		<Using Include="System.Drawing" />
+		<Using Include="System.Drawing.Drawing2D" />
+		<Using Include="System.Drawing.Imaging" />
+		<Using Include="System.Globalization" />
+		<Using Include="System.IO" />
+		<Using Include="System.IO.Compression" />
+		<Using Include="System.Linq" />
+		<Using Include="System.Net" />
+		<Using Include="System.Net.Http" />
+		<Using Include="System.Runtime.InteropServices" />
+		<Using Include="System.Text" />
+		<Using Include="System.Threading" />
+		<Using Include="System.Threading.Tasks" />
+		<Using Include="System.Windows.Forms" />
+		<Using Include="System.Xml" />
+		<Using Include="System.Xml.Linq" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Proprietes\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Proprietes\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\RESOURCES\Xml\ListeMethodes.xml" Link="ListeMethodes.xml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>

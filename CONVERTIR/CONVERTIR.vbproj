@@ -1,0 +1,155 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<StartupObject>Sub Main</StartupObject>
+		<UseWindowsForms>true</UseWindowsForms>
+		<MyType>WindowsFormsWithCustomSubMain</MyType>
+		<AssemblyName>FCGP_CONVERTIR_VB</AssemblyName>
+		<RootNamespace>FCGP</RootNamespace>
+		<OptionStrict>On</OptionStrict>
+		<OptionInfer>On</OptionInfer>
+		<ApplicationIcon>FCGP_Convertir.ico</ApplicationIcon>
+		<PackageId>FCGP_CONVERTIR_VB_CORE</PackageId>
+		<Authors>FCGP_CONVERTIR_CORE</Authors>
+		<Product>FCGP_CONVERTIR_CORE</Product>
+		<SignAssembly>false</SignAssembly>
+		<DelaySign>false</DelaySign>
+		<NeutralLanguage />
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageProjectUrl>http://fcgp.e-monsite.com/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/FCGP-CORE/FCGP_9</RepositoryUrl>
+		<AssemblyVersion>9.2.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.cs</DefaultItemExcludes>
+		<LangVersion>latest</LangVersion>
+		<Platforms>AnyCPU</Platforms>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn />
+		<WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+		<OutputPath>..\FCGP\VB\Debug\</OutputPath>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<RemoveIntegerChecks>false</RemoveIntegerChecks>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<DefineConstants>BETA = False, PARALLEL = True, CORE = True</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn />
+		<WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+		<OutputPath>..\FCGP\VB\Release\</OutputPath>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<RemoveIntegerChecks>true</RemoveIntegerChecks>
+		<Optimize>true</Optimize>
+		<DebugSymbols>false</DebugSymbols>
+		<DebugType>none</DebugType>
+		<DefineConstants>BETA = False, PARALLEL = True, CORE = True</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\PARTAGER\Cartes\Carte.vb" Link="ModulesPartages\Cartes\Carte.vb" />
+		<Compile Include="..\PARTAGER\Cartes\Cartes_Grille.vb" Link="ModulesPartages\Cartes\Cartes_Grille.vb" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_FichiersReferencement.vb" Link="ModulesPartages\Cartes\Carte_FichiersReferencement.vb" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_Interne_Niveau_1.vb" Link="ModulesPartages\Cartes\Carte_Interne_Niveau_1.vb" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_Interne_Niveau_2.vb" Link="ModulesPartages\Cartes\Carte_Interne_Niveau_2.vb" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_Interpol_Avec_Grille.vb" Link="ModulesPartages\Cartes\Carte_Interpol_Avec_Grille.vb" />
+		<Compile Include="..\PARTAGER\Cartes\Carte_Interpol_Sans_Grille.vb" Link="ModulesPartages\Cartes\Carte_Interpol_Sans_Grille.vb" />
+		<Compile Include="..\PARTAGER\Cartes\DescriptionImageFichier.vb" Link="ModulesPartages\Cartes\DescriptionImageFichier.vb" />
+		<Compile Include="..\PARTAGER\Cartes\FormatJNX.vb" Link="ModulesPartages\Cartes\FormatJNX.vb" />
+		<Compile Include="..\PARTAGER\Cartes\FormatORUX.vb" Link="ModulesPartages\Cartes\FormatORUX.vb" />
+		<Compile Include="..\PARTAGER\Cartes\GeoRef.vb" Link="ModulesPartages\Cartes\GeoRef.vb" />
+		<Compile Include="..\PARTAGER\Commun\Commun.vb" Link="ModulesPartages\Commun\Commun.vb" />
+		<Compile Include="..\PARTAGER\Commun\CurseursSouris.vb" Link="ModulesPartages\Commun\CurseursSouris.vb" />
+		<Compile Include="..\PARTAGER\Commun\NativeMethods.vb" Link="ModulesPartages\Commun\NativeMethods.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ConvertirCoordonnees.vb" Link="ModulesPartages\ConvertirCoordonnees\ConvertirCoordonnees.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ParametresDatums.vb" Link="ModulesPartages\ConvertirCoordonnees\ParametresDatums.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionCartesiennes.vb" Link="ModulesPartages\ConvertirCoordonnees\ProjectionCartesiennes.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionLambert_1.vb" Link="ModulesPartages\ConvertirCoordonnees\ProjectionLambert_1.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionLambert_2.vb" Link="ModulesPartages\ConvertirCoordonnees\ProjectionLambert_2.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionLongitudeLatitude.vb" Link="ModulesPartages\ConvertirCoordonnees\ProjectionLongitudeLatitude.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionMercator.vb" Link="ModulesPartages\ConvertirCoordonnees\ProjectionMercator.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionMercatorUtm.vb" Link="ModulesPartages\ConvertirCoordonnees\ProjectionMercatorUtm.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionWebMercator.vb" Link="ModulesPartages\ConvertirCoordonnees\ProjectionWebMercator.vb" />
+		<Compile Include="..\PARTAGER\ConvertirCoordonnees\ProjectionSuisse.vb" Link="ModulesPartages\ConvertirCoordonnees\ProjectionSuisse.vb" />
+		<Compile Include="..\PARTAGER\DonneesCartographiques\DonneesSiteWeb.vb" Link="ModulesPartages\DonneesCartographiques\DonneesSiteWeb.vb" />
+		<Compile Include="..\PARTAGER\DonneesCartographiques\NiveauDetailCartographique.vb" Link="ModulesPartages\DonneesCartographiques\NiveauDetailCartographique.vb" />
+		<Compile Include="..\PARTAGER\DonneesCartographiques\ProjectionCartographique.vb" Link="ModulesPartages\DonneesCartographiques\ProjectionCartographique.vb" />
+		<Compile Include="..\PARTAGER\DonneesCartographiques\SystemeCartographique.vb" Link="ModulesPartages\DonneesCartographiques\SystemeCartographique.vb" />
+		<Compile Include="..\PARTAGER\Enumerations\Enumerations.vb" Link="ModulesPartages\Enumerations\Enumerations.vb" />
+		<Compile Include="..\PARTAGER\Informations\AfficheInformation.vb" Link="ModulesPartages\Informations\AfficheInformation.vb" />
+		<Compile Include="..\PARTAGER\Settings\Settings.vb" Link="ModulesPartages\Settings\Settings.vb" />
+		<Compile Include="..\PARTAGER\Structures\PointD.vb" Link="ModulesPartages\Structures\PointD.vb" />
+		<Compile Include="..\PARTAGER\Structures\PointG.vb" Link="ModulesPartages\Structures\PointG.vb" />
+		<Compile Include="..\PARTAGER\Structures\PointProjection.vb" Link="ModulesPartages\Structures\PointProjection.vb" />
+		<Compile Include="..\PARTAGER\Structures\RectangleD.vb" Link="ModulesPartages\Structures\RectangleD.vb" />
+		<Compile Include="..\PARTAGER\Structures\SizeD.vb" Link="ModulesPartages\Structures\SizeD.vb" />
+		<Compile Include="..\PARTAGER\TamponMemoire\DonneesImage.vb" Link="ModulesPartages\TamponMemoire\DonneesImage.vb" />
+		<Compile Include="..\PARTAGER\TamponMemoire\ImageBlocked.vb" Link="ModulesPartages\TamponMemoire\ImageBlocked.vb" />
+		<Compile Include="..\PARTAGER\TamponMemoire\TableauBlocked.vb" Link="ModulesPartages\TamponMemoire\TableauBlocked.vb" />
+		<Compile Include="..\PARTAGER\Traces\Trace.vb" Link="ModulesPartages\Traces\Trace.vb" />
+		<Compile Include="..\PARTAGER\Traces\TraceFormFermer.vb" Link="ModulesPartages\Traces\TraceFormFermer.vb" />
+		<Compile Include="..\PARTAGER\Traces\TraceFormOuvrir.vb" Link="ModulesPartages\Traces\TraceFormOuvrir.vb" />
+		<Compile Include="..\PARTAGER\Traces\TraceFormProprietes.vb" Link="ModulesPartages\Traces\TraceFormProprietes.vb" />
+	</ItemGroup>	
+
+	<ItemGroup>
+	    <Import Include="FCGP.Coordonnees" />
+	    <Import Include="FCGP.Proprietes" />
+	    <Import Include="FCGP.TRKs" />
+	    <Import Include="Microsoft.VisualBasic" />
+	    <Import Include="System" />
+	    <Import Include="System.Collections.Generic" />
+	    <Import Include="System.ComponentModel" />
+	    <Import Include="System.Data" />
+	    <Import Include="System.Data.SQLite" />
+		<Import Include="System.Diagnostics" />
+	    <Import Include="System.Drawing" />
+		<Import Include="System.Drawing.Drawing2D" />
+	    <Import Include="System.Drawing.Imaging" />
+	    <Import Include="System.Globalization" />
+	    <Import Include="System.IO" />
+	    <Import Include="System.IO.Compression" />
+		<Import Include="System.Linq" />
+	    <Import Include="System.Net" />
+	    <Import Include="System.Net.Http" />
+	    <Import Include="System.Runtime.CompilerServices" />
+	    <Import Include="System.Runtime.InteropServices" />
+	    <Import Include="System.Text" />
+	    <Import Include="System.Threading" />
+		<Import Include="System.Threading.Tasks" />
+	    <Import Include="System.Windows.Forms" />
+	    <Import Include="System.Xml" />
+	    <Import Include="System.Xml.Linq" />
+    </ItemGroup>
+	
+	<ItemGroup>
+		<Compile Update="Proprietes\Resources.Designer.vb">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Proprietes\Resources.resx">
+			<CustomToolNamespace>Proprietes</CustomToolNamespace>
+			<Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.vb</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\RESOURCES\Xml\ListeMethodes.xml" Link="ListeMethodes.xml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>
