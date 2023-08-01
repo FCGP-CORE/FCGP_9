@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Methodes>
+	<Methode cle ="" nom ="" module ="" program ="CAPTURER" />
+
+	<Methode cle ="" nom ="" module ="CacheTuiles" program="CAPTURER" />
+	<Methode cle ="T6Q5" nom ="ChangerRepertoireCaches" module ="CacheTuiles" program="CAPTURER" />
+	<Methode cle ="C6M7" nom ="CreerTable" module ="CacheTuiles" program="CAPTURER" />
+	<Methode cle ="T5E6" nom ="SupprimerTable" module ="CacheTuiles" program="CAPTURER" />
+	<Methode cle ="N0J9" nom ="RenommerChampsBlob" module ="CacheTuiles" program ="CAPTURER" />
+
+	<Methode cle ="" nom ="" module ="DemandeTuiles" program ="CAPTURER" />
+	<Methode cle ="D3Y0" nom ="TelechargerBytesTuileAsync" module ="DemandeTuiles" program ="CAPTURER" />
+
+	<Methode cle ="" nom ="" module ="ServeurCarto" program ="CAPTURER" />
+	<Methode cle ="L3N5" nom ="AjouterLayers" module ="ServeurCarto" program ="CAPTURER" />
+	<Methode cle ="V5B8" nom ="RequeteWebCapactiesAsync" module ="ServeurCarto" program ="CAPTURER" />
+
+	<Methode cle ="" nom ="" module ="TelechargementCarte" program="CAPTURER" />
+	<Methode cle ="A2AF" nom ="RealiserCarteAsync" module ="TelechargementCarte" program="CAPTURER" />
+	<Methode cle ="Y0V7" nom ="TelechargerDataLayerAsync" module ="TelechargementCarte" program="CAPTURER" />
+
+	<Methode cle ="" nom ="" module ="Capturer" program ="CAPTURER" />
+	<Methode cle ="Y1H3" nom ="Capturer_Load" module ="Capturer" program ="CAPTURER" />
+
+	<Methode cle ="" nom ="" module ="Configuration" program="CAPTURER" />
+	<Methode cle ="Y8X2" nom ="Repertoires_Click" module ="Configuration" program="CAPTURER" />
+
+	<Methode cle ="" nom ="" module ="Preferences" program="CAPTURER" />
+	<Methode cle ="I0S9" nom ="Preferences_Load" module ="Preferences" program ="CAPTURER" />
+	<Methode cle ="V9P9" nom ="Preferences_FormClosed" module ="Preferences" program ="CAPTURER" />
+	<Methode cle ="V7P8" nom ="Repertoires_Click" module ="Preferences" program ="CAPTURER" />
+
+
+	<Methode cle ="" nom ="" module ="" program ="CONVERTIR" />
+
+	<Methode cle ="" nom ="" module ="Convertir" program ="CONVERTIR" />
+	<Methode cle ="G4M6" nom ="LabelRepertoireCartes_Click" module ="Convertir" program ="CONVERTIR" />
+	<Methode cle ="R7C3" nom ="LabelRepertoireFichiersTuiles_Click" module ="Convertir" program ="CONVERTIR" />
+	<Methode cle ="T4S5" nom ="LabelTraces_Click" module ="Convertir" program ="CONVERTIR" />
+	
+	
+	<Methode cle ="" nom ="" module ="" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module = "FichiersAltitudes" program ="PARTAGER" />
+	<Methode cle ="4CFA" nom ="CloturerAltitudes" module ="FichiersAltitudes" program ="PARTAGER" />
+	<Methode cle ="6989" nom ="TrouverAltitudeCoordonnees" module ="FichiersAltitudes" program ="PARTAGER" />
+	<Methode cle ="H4M7" nom ="TelechargerFichierHGTAsync" module ="FichiersAltitudes" program ="PARTAGER" />	
+	
+	<Methode cle ="" nom ="" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="T9B7" nom ="New : Capturer" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="C4C5" nom ="New : Regrouper" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="U1F0" nom ="FinaliserCarte" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="A3G6" nom ="RealiserDemandes" module ="Carte" program ="PARTAGER" />
+	
+	<Methode cle ="O9A5" nom ="AfficherGrille" module ="Carte" program ="PARTAGER" />	
+	<Methode cle ="N2X2" nom ="AfficherGrilleZones" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="B2Y3" nom ="AjouterReferences" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="H9Z5" nom ="AjouterReferencesZones" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="T5Y0" nom ="CalculerGrille" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="E0W8" nom ="CalculerGrilleZones" module ="Carte" program ="PARTAGER" />
+	
+	<Methode cle ="E6A4" nom ="EcrireFichierGeoref" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="W2T9" nom ="EcrireCompeLandMercator" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="W2K7" nom ="EcrireCompeLandLV03" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="B4C0" nom ="EcrireCompeLandWGS84" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="Q3I6" nom ="EcrireMapInfoLV03" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="T5J2" nom ="EcrireMapInfoUTM" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="F8W1" nom ="EcrireMapInfoWGS84" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="A9P8" nom ="EcrireMapInfoMercator" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="A4T8" nom ="EcrireOziExploreurMercator" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="U3D5" nom ="EcrireOziExploreurLV03" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="E3Z5" nom ="EcrireOziExploreurWGS84" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="P8W7" nom ="EcrireQgisMercator" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="O7T5" nom ="EcrireQgisLV03" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="O4J4" nom ="EcrireQgisWGS84" module ="Carte" program ="PARTAGER" />
+	
+	<Methode cle ="L8L7" nom ="GenererInterpolation" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="D9Z0" nom ="GenererFichiersGeoreferencement" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="G3U1" nom ="GenererFichiersTuiles" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="D6W2" nom ="EcrireFichierKMZ" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="A0T4" nom ="DefinirTracesKML" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="F0I1" nom ="AfficherTraces" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="F8J4" nom ="DessinerTrace" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="D5X8" nom ="EcrireTuiles" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="P9G3" nom ="EcrireTuilesTranche" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="A3A1" nom ="LireFichierGeoref" module ="Carte" program ="PARTAGER" />
+	
+	<Methode cle ="U3Q7" nom ="FichierSrcToDst" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="W3K9" nom ="EcrireDonneesFichierSrcToFichierDst" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="E0E4" nom ="FichierFormatsToRaw" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="V2T6" nom ="FichierRawToFormats" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="N3L5" nom ="DecomposerCoordonneesCapturees : Erreur Externe 1" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="ACE9" nom ="DecomposerCoordonneesCapturees : Erreur Externe 2" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="X6J8" nom ="DecomposerCoordonneesCapturees : Erreur Interne" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="H0H4" nom ="DecomposerCoordonneesDMS" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="L2C6" nom ="DecomposerCoordonneesMetres" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="A44C" nom ="TrouverNbZonesUtm : Erreur Externe 1" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="CA48" nom ="TrouverNbZonesUtm : Erreur Externe 2" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="X7Q8" nom ="TrouverNbZonesUtm : Erreur Interne" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="EDA8" nom ="TrouverDPIImpression" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="C2L2" nom ="InterpolerCarte" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="A5L0" nom ="TrouverCoordonnesCarteAvecGrille" module ="Carte" program ="PARTAGER" />
+
+	<Methode cle ="S4E2" nom ="InterpolerCarteAvecGrille" module ="Carte" program ="PARTAGER" />
+	<Methode cle ="X6X6" nom ="InitialiserICAG" module ="Carte" program ="PARTAGER" />
+	
+	<Methode cle ="P8A8" nom ="InterpolerCarteSansGrille" module ="Carte" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="StructuresJNX" program ="PARTAGER" />
+	<Methode cle ="Y4P3" nom ="LireNiveauCarteJnx" module ="StructuresJNX" program ="PARTAGER" />
+	<Methode cle ="D8M3" nom ="ChangerNiveauAffichageCarteJNX" module ="StructuresJNX" program ="PARTAGER" />
+	<Methode cle ="W1T4" nom ="ChangerOrdreAffichageCarteJNX" module ="StructuresJNX" program ="PARTAGER" />
+	<Methode cle ="P2S1" nom ="VerifierCarteJNX" module ="StructuresJNX" program ="PARTAGER" />
+	<Methode cle ="I2C3" nom ="AjouterNiveauCarteJNX" module ="StructuresJNX" program ="PARTAGER" />
+	<Methode cle ="C6S6" nom ="CreerCarteJNX" module ="StructuresJNX" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="JNXWriter" program ="PARTAGER" />
+	<Methode cle ="A1Y6" nom ="New : Ajouter" module ="JNXWriter" program ="PARTAGER" />
+	<Methode cle ="E0J0" nom ="New : Creer" module ="JNXWriter" program ="PARTAGER" />
+	<Methode cle ="AF55" nom ="New : Valeur" module ="JNXWriter" program ="PARTAGER" />
+	<Methode cle ="X9S1" nom ="CloseFile" module ="JNXWriter" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="JNXReader" program ="PARTAGER" />
+	<Methode cle ="CE1F" nom ="GetJpegStream" module ="JNXReader" program ="PARTAGER" />
+	<Methode cle ="E051" nom ="OpenFile" module ="JNXReader" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="FichierCarteOrux" program ="PARTAGER" />
+	<Methode cle ="224E" nom ="LireNiveauCarteOrux" module ="FichierCarteOrux" program ="PARTAGER" />
+	<Methode cle ="F9Z1" nom ="ChangerNiveauAffichageCarteOrux" module ="FichierCarteOrux" program ="PARTAGER" />
+	<Methode cle ="Z5H0" nom ="VerifierCarteORUX" module ="FichierCarteOrux" program ="PARTAGER" />
+	<Methode cle ="T1P0" nom ="CreerCarteOrux" module ="FichierCarteOrux" program ="PARTAGER" />
+	<Methode cle ="A6C7" nom ="AjouterNiveauCarteOrux" module ="FichierCarteOrux" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="BDTuilesOruxMaps" program ="PARTAGER" />
+	<Methode cle ="A1X5" nom ="New : Creer" module ="BDTuilesOruxMaps" program ="PARTAGER" />
+	<Methode cle ="H6Y2" nom ="LireTuileToFichier" module ="BDTuilesOruxMaps" program ="PARTAGER" />
+	<Methode cle ="T0B0" nom ="LireNiveauFichier" module ="BDTuilesOruxMaps" program ="PARTAGER" />
+	<Methode cle ="N0P5" nom ="EcrireNiveauFichier" module ="BDTuilesOruxMaps" program ="PARTAGER" />
+	<Methode cle ="O7Y5" nom ="ChangerNiveauAffichage" module ="BDTuilesOruxMaps" program ="PARTAGER" />
+	<Methode cle ="S2V7" nom ="CreerTableTuiles" module ="BDTuilesOruxMaps" program ="PARTAGER" />
+	<Methode cle ="O5X2" nom ="CreerTableAndroid" module ="BDTuilesOruxMaps" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="Commun" program ="PARTAGER" />
+	<Methode cle ="Z0A3" nom ="InitialiserCommun" module ="Commun" program ="PARTAGER" />
+	<Methode cle ="W7X7" nom ="RemplirListeMethode" module ="Commun" program ="PARTAGER" />
+	<Methode cle ="S6H7" nom ="RechercherInformationFCGP" module ="Commun" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="ConvertirCoordonnees" program ="PARTAGER" />
+	<Methode cle ="3B18" nom ="ConvertProjectionToWGS84" module ="ConvertirCoordonnees" program ="PARTAGER" />
+	<Methode cle ="3A2D" nom ="ConvertWGS84ToProjection" module ="ConvertirCoordonnees" program ="PARTAGER" />
+	<Methode cle ="3D0E" nom ="ConvertProjectionToProjection" module ="ConvertirCoordonnees" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="ProjectionCartesiennes" program ="PARTAGER" />
+	<Methode cle ="E4F2" nom ="ConvertDatumToDatum" module ="ProjectionCartesiennes" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="ProjectionLongitudeLatitude" program ="PARTAGER" />
+	<Methode cle ="A654" nom ="ConvertWGS84ToLatLon" module ="ProjectionLongitudeLatitude" program ="PARTAGER" />
+	<Methode cle ="EE86" nom ="ConvertLatLonToWGS84" module ="ProjectionLongitudeLatitude" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="ProjectionSuisse" program ="PARTAGER" />
+	<Methode cle ="8D5C" nom ="ConvertLV03ToCH1903" module ="ProjectionSuisse" program ="PARTAGER" />
+	<Methode cle ="19F5" nom ="ConvertLV03ToWGS84" module ="ProjectionSuisse" program ="PARTAGER" />
+	<Methode cle ="466F" nom ="ConvertCH1903ToLV03" module ="ProjectionSuisse" program ="PARTAGER" />
+	<Methode cle ="7782" nom ="ConvertWGS84ToLV03" module ="ProjectionSuisse" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="ProjectionWebMercator" program ="PARTAGER" />
+	<Methode cle ="CD1E" nom ="ConvertWGS84ToWebMercator" module ="ProjectionWebMercator" program ="PARTAGER" />
+	<Methode cle ="DB1C" nom ="ConvertWebMercatorToWGS84" module ="ProjectionWebMercator" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="DonneesCartographique" program ="PARTAGER" />
+	<Methode cle ="7BCD" nom ="New : Hors FCGP " module ="DonneesCartographique" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="Settings" program ="PARTAGER" />
+	<Methode cle ="T1E3" nom ="LireBaseSettings" module ="Settings" program ="PARTAGER" />
+	<Methode cle ="M3P1" nom ="InitialiserBaseSettings" module ="Settings" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="EditableBitmap" program ="PARTAGER" />
+	<Methode cle ="R4H7" nom ="New : Memoire" module ="EditableBitmap" program ="PARTAGER" />
+	<Methode cle ="E4P7" nom ="New : Image" module ="EditableBitmap" program ="PARTAGER" />
+	<Methode cle ="Y9U2" nom ="ChargerImage" module ="EditableBitmap" program ="PARTAGER" />
+
+	<Methode cle ="" nom ="" module ="SharedPinnedByteArray" program ="PARTAGER" />
+	<Methode cle ="R4F4" nom ="New" module ="SharedPinnedByteArray" program ="PARTAGER" />
+	<Methode cle ="Y4U4" nom ="LireOctetsTampon" module ="SharedPinnedByteArray" program ="PARTAGER" />
+	<Methode cle ="S5M6" nom ="LireOctetsFichierBMP" module ="SharedPinnedByteArray" program ="PARTAGER" />
+	
+	<Methode cle ="" nom ="" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="L6O1" nom ="EnregistrerTraceEncours" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="T9Y9" nom ="OuvrirTrace" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="D5W9" nom ="AjouterStyleKML" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="K5J8" nom ="AjouterTraceKML" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="G0Y5" nom ="LineStringKMLDebut" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="B0Q6" nom ="LineStringKMLFin" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="X2S5" nom ="StyleLineKML" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="X9N3" nom ="StyleMapKML" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="I5F4" nom ="CouleurToStrKML" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="R7D1" nom ="ChargerGPX" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="F1I7" nom ="ImporterPointsGPX" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="D1Z1" nom ="ChargerTRK" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="Y2O4" nom ="EnregistrerTRK" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="F7M8" nom ="CalculerSegment" module ="TRK" program ="PARTAGER" />
+	<Methode cle ="7D49" nom ="CalculerStatSegmentsTrace" module ="TRK" program ="PARTAGER" />	
+
+	
+	<Methode cle ="" nom ="" module ="" program ="REGROUPER" />
+
+	<Methode cle ="" nom ="" module ="Configuration" program ="REGROUPER" />
+	<Methode cle ="I8G0" nom ="RepertoireTuiles_Click" module ="Configuration" program ="REGROUPER" />
+
+	<Methode cle ="" nom ="" module ="FichiersTuilesJnxOrux" program ="REGROUPER" />
+	<Methode cle ="B4A5" nom ="Lancer_Click" module ="FichiersTuilesJnxOrux" program ="REGROUPER" />
+	<Methode cle ="X5R3" nom ="RealiserFichiersTuiles" module ="FichiersTuilesJnxOrux" program ="REGROUPER" />
+	<Methode cle ="I5D3" nom ="RealiserFichierBinaire" module ="FichiersTuilesJnxOrux" program ="REGROUPER" />
+
+	<Methode cle ="" nom ="" module ="FichierTuilesKMZ" program ="REGROUPER" />
+	<Methode cle ="A8T2" nom ="Lancer_Click" module ="FichierTuilesKMZ" program ="REGROUPER" />
+	<Methode cle ="6DCB" nom ="RealiserFichiersTuiles" module ="FichierTuilesKMZ" program ="REGROUPER" />
+	<Methode cle ="0693" nom ="RealiserFichierBinaire" module ="FichierTuilesKMZ" program ="REGROUPER" />
+
+	<Methode cle ="" nom ="" module ="Regrouper" program ="REGROUPER" />
+	<Methode cle ="O8K0" nom ="Regrouper_Load" module ="Regrouper" program ="REGROUPER" />
+
+	<Methode cle ="" nom ="" module ="SupportVisue" program ="REGROUPER" />
+	<Methode cle ="L1P4" nom ="AfficherTamponVisue" module ="SupportVisue" program ="REGROUPER" />
+	
+</Methodes>

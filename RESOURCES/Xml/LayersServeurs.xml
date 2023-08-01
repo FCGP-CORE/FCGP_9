@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Serveurs>
+	<Serveur fcgp="GF" nom = "Géofoncier">
+		<Layers>
+			<Layer identifiant="GEOGRAPHICALGRIDSYSTEMS.MAPS" style = "normal" time ="" visibilite = "1"  indice = "-1" format ="jpeg">
+				<Nom>Cartes classiques (Cartes) </Nom>
+			</Layer>
+			<Layer identifiant="GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD" style = "normal" time = "" visibilite = "1"  indice = "-1" format ="jpeg">
+				<Nom>Cartes Scan Express Classique</Nom>
+			</Layer>
+			<Layer identifiant="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" style = "normal" time = "" visibilite = "1"  indice = "-1" format ="png">
+				<Nom>Plans IGN entièrement informatisés (Plans) </Nom>
+			</Layer>
+			<Layer identifiant="ORTHOIMAGERY.ORTHOPHOTOS" style = "normal" time = "" visibilite = "1"  indice = "-1" format ="jpeg">
+				<Nom>Photos aériennes (Photos) </Nom>
+			</Layer>
+			<Layer identifiant="GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN" style = "normal" time = "" visibilite = "0.33"  indice = "-1" format ="png">
+				<Nom>Pentes >= 30 deg (Pentes) </Nom>
+			</Layer>
+			<Layer identifiant="CADASTRALPARCELS.PARCELS" style = "bdparcellaire_o" time = "" visibilite = "1"  indice = "-1" format ="png">
+				<Nom>Parcelles cadastrales en orange</Nom>
+			</Layer>
+			<Layer identifiant="CADASTRALPARCELS.PARCELS" style = "bdparcellaire" time = "" visibilite = "1"  indice = "-1" format ="png">
+				<Nom>Parcelles cadastrales en noir</Nom>
+			</Layer>
+			<Layer identifiant="GEOGRAPHICALGRIDSYSTEMS.COASTALMAPS" style = "normal" time ="" visibilite = "1"  indice = "-1" format ="png">
+				<Nom>Cartes topo côtières</Nom>
+			</Layer>
+		</Layers>
+	</Serveur>
+	<Serveur fcgp="DT" nom = "DomTom">
+		<Layers>
+			<Layer identifiant="GEOGRAPHICALGRIDSYSTEMS.MAPS" style = "normal" time ="" visibilite = "1"  indice = "-1" format ="jpeg">
+				<Nom>Cartes classiques (Cartes) </Nom>
+			</Layer>
+			<Layer identifiant="GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD" style = "normal" time = "" visibilite = "1"  indice = "-1" format ="jpeg">
+				<Nom>Cartes Scan Express Classique</Nom>
+			</Layer>
+			<Layer identifiant="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" style = "normal" time = "" visibilite = "1"  indice = "-1" format ="png">
+				<Nom>Plans IGN entèrement informatisés</Nom>
+			</Layer>
+			<Layer identifiant="ORTHOIMAGERY.ORTHOPHOTOS" style = "normal" time = "" visibilite = "1"  indice = "-1" format ="jpeg">
+				<Nom>Photos aériennes (Photos) </Nom>
+			</Layer>
+			<Layer identifiant="CADASTRALPARCELS.PARCELS" style = "bdparcellaire_o" time = "" visibilite = "1"  indice = "-1" format ="png">
+				<Nom>Parcelles cadastrales en orange</Nom>
+			</Layer>
+			<Layer identifiant="CADASTRALPARCELS.PARCELS" style = "bdparcellaire" time = "" visibilite = "1"  indice = "-1" format ="png">
+				<Nom>Parcelles cadastrales en noir</Nom>
+			</Layer>
+		</Layers>
+	  </Serveur>
+	<Serveur fcgp="SM" nom = "Suisse Mobile">
+	  <Layers>
+		  <Layer identifiant="ch.swisstopo.pixelkarte-farbe" style = "default" time ="current" visibilite = "1"  indice = "-1" format ="jpeg">
+			  <Nom>Cartes classiques (Cartes) </Nom>
+		  </Layer>
+		  <Layer identifiant="ch.swisstopo.swissimage" style = "default" time ="current" visibilite = "1"  indice = "-1" format ="jpeg">
+			  <Nom>Photos aériennes (Photos) </Nom>
+		  </Layer>
+		  <Layer identifiant="ch.swisstopo.hangneigung-ueber_30" style = "default" time ="current" visibilite = "0.33"  indice = "-1" format ="png">
+			  <Nom>Pentes >= 30deg (Pentes) </Nom>
+		  </Layer>
+		  <Layer identifiant="ch.swisstopo-karto.skitouren" style = "default" time ="current" visibilite = "1"  indice = "-1" format ="png">
+			  <Nom>Itineraires à ski </Nom>
+		  </Layer>
+		  <Layer identifiant="ch.swisstopo-karto.schneeschuhrouten" style = "default" time ="current" visibilite = "1"  indice = "-1" format ="png">
+			  <Nom>Itineraires à raquette</Nom>
+		  </Layer>
+		  <Layer identifiant="ch.swisstopo.swisstlm3d-wanderwege" style = "default" time ="current" visibilite = "1"  indice = "-1" format ="png">
+			  <Nom>Itineraires de randonnée</Nom>
+		  </Layer>
+	  </Layers>
+	</Serveur>
+</Serveurs>
