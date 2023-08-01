@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="InterfaceUtilisateur\AfficheGraphiqueTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Capturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\Preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\SaisieDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\SaisieDMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\SaisieGrille.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\SaisieSurfaceTraitement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\SaisieTuile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceUtilisateur\SaisieUTM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

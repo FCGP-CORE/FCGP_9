@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RafraichisseurVisue.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="ConnexionInternet.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>173, 17</value>
+  </data>
+  <data name="AideContextuelle.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>326, 17</value>
+  </data>
+  <data name="LabelNbDemandesTuiles.ToolTip" xml:space="preserve">
+    <value>Indique le nombre de demande tuiles en cours de téléchargement.
+Couleur Verte      :  --&gt; 0 demandes en cours de téléchargement
+Couleur Rouge    :  --&gt; X demandes en cours de téléchargement
+Si il y a des demandes en cours de téléchargement, vous ne pouvez
+changer de site, lancer une création de carte ou ouvrir le formulaire de configuration.</value>
+  </data>
+  <data name="LabelCoordonnees.ToolTip" xml:space="preserve">
+    <value>Type de coordonnées actuelle.
+Cliquez dessus pour ouvrir une liste de choix.
+
+Web Mercator : Grille kilométrique de la projection des sites GF et DT.
+Grille Suisse     : Grille kilométrique de la projection du site Suisse Mobile.
+DD                     : Longitude, latitude exprimée en degrés décimaux (WGS84)
+DMS                  : Longitude, latitude exprimée en degrés, minutes et secondes (WGS84)
+UTM                  : Grille kilométrique UTM. Zone, Hemisphère, X,Y (WGS84)
+TUILES_Niveau : Indices de la tuile qui contient la coordonnées du curseur avec le décalage
+                             exprimé en pixels par rapport au point haut-gauche de la tuile.</value>
+  </data>
+  <data name="ContextMenuTrace.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>916, 17</value>
+  </data>
+  <data name="LabelTrace.ToolTip" xml:space="preserve">
+    <value>Nom de la trace.
+Cliquez dessus pour ouvrir un menu.
+
+Couleur Verte      : Mode édition Off
+Couleur Orange  : Mode édition On
+En Mode édition :
+A + click : Insert un point en fin de trace ou sur un segment ou le Déplace.
+S + click : Supprime un point ou un segment.
+C + click : Coupe la trace sur un point ou un segment.</value>
+  </data>
+  <data name="ContextMenuPts.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>471, 17</value>
+  </data>
+  <data name="LabelInformation.ToolTip" xml:space="preserve">
+    <value>Zone d'information.
+Création d'une carte en cours :
+   Téléchargement des tuiles : indique le nb de tuiles déjà téléchargées.
+   Traitement des fichiers       : indique le tritement en cours.
+Hors création de carte :
+   Renseignements sur la surface de traitement.</value>
+  </data>
+  <data name="ContextMenuApp.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>613, 17</value>
+  </data>
+  <data name="CompacteCacheTuiles.ToolTip" xml:space="preserve">
+    <value>Compacte le cache (Base de Données).
+Cela permet de réduire la taille de celle-ci quant il y a eu beaucoup de suppresion de tuiles.
+Cette action peut prendre beaucoup de temps et la sortie de l'application est interdite.</value>
+  </data>
+  <data name="SaisieSurfaceTraitementApp.ToolTip" xml:space="preserve">
+    <value>Ouvre le formulaire de saisie de surface de traitement.
+Aucun champ n'est renseigné.
+Vous pouvez saisir soit les coordonnées du point1 et du point2
+soit les index des tuiles ou un mixte des 2 saisies.</value>
+  </data>
+  <data name="ContextMenuVisue.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>761, 17</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAZ/PT/Gfz0/xn89P8Z/PT/Gfz0/xn89P////8A////AP///wD///8A////AP///wD///8AgAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/////AP///wD///8A////AP///wD///8A////ABn89P8Z/PT/Gfz0/xn8
+        9P8Z/PT/Gfz0/xn89P////8A////AP///wD///8A////AP///wD///8A////AP///wCAAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP////8A////AP///wD///8A////AP//
+        /wD///8A////AP///wAZ/PT/Gfz0/////wD///8A////AP///wD///8A////AP///wCAAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/////AP//
+        /wD///8A////AP///wD///8A////ABn89P8Z/PT/////AP///wD///8A////AP///wD///8AAIAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/////AP///wD///8A////AP///wD///8AGfz0/xn89P////8A////AP///wD///8AgAAA/wCA
+        AP8AgAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/////wD///8A////AP///wAZ/PT/Gfz0/////wD///8A////AIAA
+        AP8AgAD/AIAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/////wD///8A////ABn89P////8A////AP//
+        /wD///8AAIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/////AP///wD///8A////AP//
+        /wD///8A////AIAAAP8AgAD/AIAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/AIAA/wCAAP8AgAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/////AP//
+        /wD///8A////AP///wCAAAD/AIAA/wCAAP8AgAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/wAAAIeAAAD/gAAA/wCAAP8AgAD/AIAA/wCAAP+AAAD/gAAA/wCAAP+AAAD/gAAA/4AA
+        AP+AAAD/////AP///wD///8A////AACAAP8AgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP8AkWGeALnlYwAAAIeAAAD/AIAA/wCAAP8AgAD/AIAA/wCAAP+AAAD/AIAA/wCA
+        AP+AAAD/gAAA/4AAAP////8A////AP///wCAAAD/AIAA/wCAAP8AgAD/AIAA/wCAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/AJFhngC55WMAueVjAPL//wAAAIcAgAD/AIAA/wCAAP8AgAD/AIAA/4AA
+        AP8AgAD/AIAA/4AAAP+AAAD/gAAA/4AAAP////8A////AIAAAP8AgAD/AIAA/wCAAP8AgAD/AIAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/wCRYZ4AueVjALnlYwC55WMA8v//APL//wAAAIcAgAD/AIAA/wCA
+        AP8AgAD/gAAA/wCAAP8AgAD/AIAA/4AAAP+AAAD/gAAA/////wD///8AAIAA/wCAAP8AgAD/AIAA/wCA
+        AP8AgAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/AJFhngCRYZ4AkWGeALnlYwAAAP8AAAD/AAAA/wCA
+        AP8AgAD/AIAA/wCAAP+AAAD/AIAA/wCAAP8AgAD/gAAA/4AAAP+AAAD/////AIAAAP8AgAD/AIAA/wCA
+        AP8AgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/wAAAP8AueVjAAAAhwCA
+        AP8AgAD/AIAA/wCAAP8AgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/AIAA/wCA
+        AP8AgAD/AIAA/wCAAP8AgAD/AIAA/wCAAP+AAAD/gAAA/wAAAIcAAAD/gAAA/4AAAP+AAAD/AAAA/wC5
+        5WMAAACHAIAA/wCAAP8AgAD/AJFhngCRYZ4AgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP8AgAD/AIAA/wCAAP8AgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP8AAACHAPL//wAAAP+AAAD/gAAA/4AA
+        AP8AAAD/ALnlYwAAAIcAgAD/AIAA/wCAAP8AkWGeALnlYwCRYZ4AgAD/AIAA/wCAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/wCAAP8AgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/AAAAhwDy//8A8v//AAAA/wAA
+        AIcAAACHAAAAhwAAAIcAueVjAAAAhwAAAP8AAAD/AAAA/wCRYZ4AueVjALnlYwCRYZ4AgAD/AIAA/wCA
+        AP+AAAD/gAAA/4AAAP+AAAD/AIAA/wCAAP8AgAD/AIAA/4AAAP+AAAD/gAAA/wAAAIcAueVjALnlYwC5
+        5WMAueVjALnlYwC55WMAueVjALnlYwAAAP8AueVjALnlYwC55WMAueVjALnlYwC55WMAueVjALnlYwAA
+        AIcAgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/wCR
+        YZ4AueVjALnlYwCRYZ4AAAD/AAAA/wAAAP8AAACHALnlYwAAAIcAAACHAAAAhwAAAIcAAAD/APL//wDy
+        //8AAACHAIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/////wAAgAD/AIAA/wCAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/wCRYZ4AueVjAJFhngCAAP8AgAD/AIAA/wAAAIcAueVjAAAA/wCAAP8AgAD/AIAA/wAA
+        AP8A8v//AAAAhwCAAP8AgAD/gAAA/wCAAP+AAAD/AIAA/4AAAP////8A////AACAAP+AAAD/AIAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/wCRYZ4AkWGeAIAA/wCAAP8AgAD/AAAAhwC55WMAAAD/AIAA/wCA
+        AP8AgAD/AAAA/wAAAIcAgAD/AIAA/4AAAP8AgAD/AIAA/4AAAP8AgAD/gAAA/////wD///8AgAAA/wCA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP8AgAD/AIAA/wCAAP8AAACHALnlYwAA
+        AP8AgAD/AIAA/wCAAP8AgAD/AIAA/wCAAP8AgAD/AIAA/wCAAP8AgAD/AIAA/wCAAP+AAAD/////AP//
+        /wD///8AgAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP8AAAD/AAAA/wAA
+        AP8AueVjAJFhngCRYZ4AkWGeAIAA/wCAAP8AgAD/AIAA/4AAAP8AgAD/AIAA/wCAAP8AgAD/AAAAfwAA
+        AH////8A////AP///wCAAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/wAA
+        AIcA8v//APL//wC55WMAueVjALnlYwCRYZ4AgAD/AIAA/wCAAP+AAAD/gAAA/wCAAP8AgAD/AIAA/wCA
+        AP8AAAB/////AP///wD///8A////AP///wCAAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/wAAAIcA8v//ALnlYwC55WMAkWGegAAA/4AAAP+AAAD/gAAA/wCAAP8AgAD/AIAA/wCA
+        AP8AgAD/AAAAfwAAAH////8A////AP///wD///8A////AP///wAAgAD/gAAA/4AAAP+AAAD/gAAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/AIAA/wAAAIcAueVjAJFhngCAAP+AAAD/AIAA/wCAAP8AgAD/AIAA/wCA
+        AP8AgAD/AIAA/wAAAH8AAAB/////AP///wD///8AGfz0/////wD///8A////AACAAP8AgAD/AIAA/wCA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP8AgAD/AIAA/wAAAIcAgAD/AIAA/wCAAP8AgAD/AIAA/wCA
+        AP8AgAD/AIAA/wCAAP8AgAD/AAAAf////wD///8A////ABn89P8Z/PT/////AP///wD///8A////AACA
+        AP8AgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/wCAAP8AgAD/AIAA/wCAAP8AgAD/AIAA/wCA
+        AP8AgAD/AIAA/wCAAP8AgAD/AAAAfwAAAH////8A////AP///wD///8AGfz0/xn89P////8A////AP//
+        /wD///8A////AP///wAAgAD/AIAA/wCAAP+AAAD/gAAA/4AAAP+AAAD/AIAA/wCAAP+AAAD/AIAA/wCA
+        AP8AgAD/AIAA/wCAAP8AgAD/AIAA/wAAAH8AAAB/////AP///wD///8A////AP///wAZ/PT/Gfz0////
+        /wD///8A////AP///wD///8A////AP///wAAgAD/AIAA/wCAAP8AgAD/AIAA/4AAAP+AAAD/gAAA/wCA
+        AP8AgAD/AIAA/wCAAP8AgAD/AIAA/wAAAH8AAAB/////AP///wD///8A////AP///wD///8A////ABn8
+        9P8Z/PT/////AP///wD///8A////AP///wD///8A////AP///wD///8AAIAA/wCAAP8AgAD/AIAA/4AA
+        AP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AGfz0/xn89P8Z/PT/Gfz0/xn89P8Z/PT/Gfz0/////wD///8A////AP///wD///8A////AP//
+        /wAAgAD/AIAA/4AAAP+AAAD/gAAA/4AAAP////8A////AP///wD///8A////AP///wD///8AGfz0/xn8
+        9P8Z/PT/Gfz0/xn89P8Z/PT/A/gfwH/AA/5/AAD+fgAAfngAAB5wAAAO8AAAD+AAAAfAAAADwACAA4AB
+        gAGAA4ABgACAAQAAgAAAAIAAAACCAAAAgwAA/3+AAGCAAIAggAGAAIABgACAAcAAgAfAAOAH4ADAD/AA
+        gB9wAAAeeAAAfn4AAP5/AAP+f8AD/gP4H8A=
+</value>
+  </data>
+  <data name="LabelMenuPts.ToolTip" xml:space="preserve">
+    <value>Cliquez dessus pour ouvrir un menu.
+
+Couleur Grise      : Le point n'est pas défini.
+Couleur Orange  : Le point est le seul à être défini. 
+Couleur Verte      : Les 2 points sont définis et la surface de traitement est Ok pour l'échelle.
+Couleur Rouge    : Les 2 points sont définis et la surface de traitement n'est pas Ok pour l'échelle.</value>
+  </data>
+</root>

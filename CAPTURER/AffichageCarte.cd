@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="FCGP.AffichageCarte">
+    <Position X="1" Y="2" Width="3" />
+    <Members>
+      <Field Name="_DecalageTampon" Hidden="true" />
+      <Method Name="AjouterPentes" Hidden="true" />
+      <Method Name="CopierTampon" Hidden="true" />
+      <Method Name="CreerImageAffichageAsync" Hidden="true" />
+      <Field Name="DecalageTamponPentes" Hidden="true" />
+      <Field Name="DimensionsTuilePentes" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="disposed" Hidden="true" />
+      <Field Name="Encours" Hidden="true" />
+      <Field Name="Futur" Hidden="true" />
+      <Property Name="ImageFond" Hidden="true" />
+      <Field Name="NbLignesFond" Hidden="true" />
+      <Field Name="NbPixelsLigneFond" Hidden="true" />
+      <Field Name="Pt0" Hidden="true" />
+      <Field Name="Pt0Pentes" Hidden="true" />
+      <Field Name="StrideImageFond" Hidden="true" />
+      <Field Name="SurfaceAffichage" Hidden="true" />
+      <Field Name="Taille" Hidden="true" />
+      <Field Name="TaillePentes" Hidden="true" />
+      <Method Name="TrouverRectangleZoom" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAKAAJAABDFiAAAEgESACgAIYAAAEAAgCAAJAoEAAxA=</HashCode>
+      <FileName>Capturer\AffichageCarte.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="FCGP.ServeurCarto">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Members>
+      <Field Name="_DomTom" Hidden="true" />
+      <Field Name="_IndiceFondPlan" Hidden="true" />
+      <Field Name="_NbTuilesDemandeAffichage" Hidden="true" />
+      <Field Name="Affichage" Hidden="true" />
+      <Method Name="AjouterLayers" Hidden="true" />
+      <Method Name="AjouterLayersAffichage" Hidden="true" />
+      <Method Name="ChangerFondPlanAffichage" Hidden="true" />
+      <Field Name="CheminCache" Hidden="true" />
+      <Field Name="ClefIGN" Hidden="true" />
+      <Field Name="CouchePentes" Hidden="true" />
+      <Field Name="CptOSM" Hidden="true" />
+      <Field Name="DebutPorte" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="disposed" Hidden="true" />
+      <Field Name="DonneesLayersAffichages" Hidden="true" />
+      <Field Name="DonneesLayersPentes" Hidden="true" />
+      <Field Name="DonneesSitesWebs" Hidden="true" />
+      <Field Name="EPSG_Rendu" Hidden="true" />
+      <Field Name="FichierLayersServeurs" Hidden="true" />
+      <Method Name="InitialiserAffichage" Hidden="true" />
+      <Method Name="InitialiserHttp" Hidden="true" />
+      <Method Name="InitialiserLayer" Hidden="true" />
+      <Field Name="LayerPentes" Hidden="true" />
+      <Field Name="Layers" Hidden="true" />
+      <Field Name="ListeDemandesAffichage" Hidden="true" />
+      <Field Name="ListeLayers" Hidden="true" />
+      <Field Name="NbLayersAffichages" Hidden="true" />
+      <Field Name="PorteSiteOSM" Hidden="true" />
+      <Method Name="RequeteWebCapactiesAsync" Hidden="true" />
+      <Method Name="ServiceCapabilities" Hidden="true" />
+      <Method Name="TesterLayer" Hidden="true" />
+      <Field Name="TypeServeur" Hidden="true" />
+      <Field Name="TypeTelechargement" Hidden="true" />
+      <Field Name="Url" Hidden="true" />
+      <Field Name="UserAgent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="FCGP.ServeurCarto.TypesServeur" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Capturer\CacheTuiles.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="FCGP.ServeurCarto.StatutTuile" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Capturer\CacheTuiles.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="FCGP.ServeurCarto.CacheTuiles">
+        <Members>
+          <Field Name="_Connection" Hidden="true" />
+          <Property Name="Cle" Hidden="true" />
+          <Field Name="CommandConnection" Hidden="true" />
+          <Property Name="Connection" Hidden="true" />
+          <Method Name="CreerTable" Hidden="true" />
+          <Method Name="Dispose" Hidden="true" />
+          <Field Name="disposed" Hidden="true" />
+          <Method Name="Initialiser" Hidden="true" />
+          <Field Name="NomBaseCacheTuile" Hidden="true" />
+          <Method Name="RenommerChampsBlob" Hidden="true" />
+          <Field Name="Serveur" Hidden="true" />
+          <Method Name="SupprimerTable" Hidden="true" />
+          <Method Name="VerifierVersionCache" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>Capturer\CacheTuiles.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="FCGP.ServeurCarto.Layer">
+        <Members>
+          <Field Name="EPSG" Hidden="true" />
+          <Method Name="FormatFichierTile" Hidden="true" />
+          <Field Name="SensColRow" Hidden="true" />
+          <Field Name="ServeurType" Hidden="true" />
+          <Field Name="TileMatrix" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>Capturer\DemandeTuiles.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FCGP.ServeurCarto.DemandeTuiles">
+        <Members>
+          <Field Name="Couche" Hidden="true" />
+          <Field Name="CptDemandesAffichage" Hidden="true" />
+          <Method Name="EcrireStatut" Hidden="true" />
+          <Field Name="IsPentes" Hidden="true" />
+          <Field Name="NbTuilesFinies" Hidden="true" />
+          <Field Name="OnFinished" Hidden="true" />
+          <Method Name="RaiseEvent_Finished" Hidden="true" />
+          <Field Name="Serveur" Hidden="true" />
+        </Members>
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Delegate Name="FCGP.ServeurCarto.DemandeTuiles.DemandeTuilesHandler" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Capturer\DemandeTuiles.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Delegate>
+          <Class Name="FCGP.ServeurCarto.DemandeTuiles.TuileAffichage">
+            <Members>
+              <Field Name="Couche" Hidden="true" />
+              <Field Name="Demande" Hidden="true" />
+              <Field Name="Index" Hidden="true" />
+              <Method Name="TelechargerBytesTuileAsync" Hidden="true" />
+              <Method Name="TelechargerTuileAffichageAsync" Hidden="true" />
+              <Method Name="TelechargerTuilePentesAsync" Hidden="true" />
+              <Field Name="Uri" Hidden="true" />
+            </Members>
+            <TypeIdentifier>
+              <NewMemberFileName>Capturer\DemandeTuiles.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Capturer\DemandeTuiles.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>KJMIJqgqinQQAAQ0gAnAJmmICKADAUBNiDoiIIAAAAA=</HashCode>
+      <FileName>Capturer\CacheTuiles.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

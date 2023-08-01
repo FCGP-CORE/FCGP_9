@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jJlsUkyZSza/qRcNf82Ca+uGybIUktLAFxIufIE9+I2rNZHkDHSnDmkNNGbReRaRL68mwiQFyc8Rtt6JHN0xfQ==",
+  "success": true,
+  "projectFilePath": "E:\\Temp\\FCGP_9-master\\CAPTURER\\CAPTURER.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gille\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\gille\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\gille\\.nuget\\packages\\scottplot\\4.1.41\\scottplot.4.1.41.nupkg.sha512",
+    "C:\\Users\\gille\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\gille\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\gille\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}
